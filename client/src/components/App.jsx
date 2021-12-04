@@ -10,7 +10,7 @@ function App() {
       <div className="app">
         <Navbar/>
         <Switch>
-          <Route path="/registration" component={Registration }/>
+          <Route path="/registration" component={ Registration }/>
         </Switch>
       </div>
     </BrowserRouter>
