@@ -1,22 +1,22 @@
 import React, { useCallback, useState } from 'react';
-import "./registration.css";
+import "./authorisation.css";
 import Input from '../../utils/input/input';
-import { registration } from '../../actions/user';
+import { login } from '../../actions/user';
 
-const Registration = () => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleClick = useCallback(() => registration(email, password), [email, password]);
+  const handleLogin = useCallback(() => login(email, password), [email, password]);
 
   return (
-    <div className="registration">
-      <div className="registration__header">Регистрация</div>
+    <div className="authorisation">
+      <div className="authorisation__header">Логин</div>
       <Input value={email} setValue={setEmail} type="text" placeholder="Введите email..."/>
       <Input value={password} setValue={setPassword} type="password" placeholder="Введите пароль..."/>
-      <button className="registration__btn" onClick={handleClick}>Войти</button>
+      <button className="authorisation__btn" onClick={handleLogin}>Войти</button>
     </div>
   );
 };
 
-export default React.memo(Registration);
+export default React.memo(Login);
