@@ -9,7 +9,7 @@ const Navbar = () => {
   const isAuth = useSelector(state => state.user.isAuth);
   const dispatch = useDispatch();
 
-  const handleLogout = useCallback(() => {dispatch(logout())}, []);
+  const handleLogout = useCallback(() => {dispatch(logout())}, [dispatch]);
 
   return (
     <div className="navbar">

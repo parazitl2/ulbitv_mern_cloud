@@ -1,5 +1,6 @@
 {
   "serverPort": 3011,
   "dbUrl": "mongodb+srv://dbUser:dumb_password@cloud.dz9lk.mongodb.net/cloud?retryWrites=true&w=majority",
-  "secretKey": "mern-my-secret-key"
+  "secretKey": "mern-my-secret-key",
+  "filePath": "/home/vasilii/Desktop/playgrounds/ulbitv_mern_cloud/server/files"
 }
